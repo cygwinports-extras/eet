@@ -1,0 +1,84 @@
+eet
+------------------------------------------
+Eet is a tiny library designed to write an arbitary set of chunks of
+data to a file and optionally compress each chunk (very much like a
+zip file) and allow fast random-access reading of the file later
+on. It does not do zip as a zip itself has more complexity than is
+needed, and it was much simpler to implement this once here.
+
+It also can encode and decode data structures in memory, as well as
+image data for saving to eet files or sending across the network to
+other machines, or just writing to arbitary files on the system. All
+data is encoded in a platform independant way and can be written and
+read by any architecture.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libjpeg62-6b-12
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.enlightenment.org/Libraries/Eet/
+
+Canonical download:
+  http://enlightenment.freedesktop.org/
+
+-------------------------------------------
+
+Build instructions:
+  unpack eet-0.9.10.037-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./eet-0.9.10.037-X.cygport all
+
+This will create:
+  /usr/src/eet-0.9.10.037-X-src.tar.bz2
+  /usr/src/eet-0.9.10.037-X.tar.bz2
+  /usr/src/libeet0-0.9.10.037-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(eet)
+  /usr/bin/eet-config
+  /usr/include/enlightenment/Eet.h
+  /usr/lib/libeet.a
+  /usr/lib/libeet.dll.a
+  /usr/lib/libeet.la
+  /usr/lib/pkgconfig/eet.pc
+  /usr/share/doc/Cygwin/eet-0.9.10.037.README
+  /usr/share/doc/eet-0.9.10.037/AUTHORS
+  /usr/share/doc/eet-0.9.10.037/COPYING
+  /usr/share/doc/eet-0.9.10.037/INSTALL
+  /usr/share/doc/eet-0.9.10.037/README
+
+(libeet0)
+  /usr/bin/cygeet-0.dll
+
+------------------
+
+Port Notes:
+
+----- version 0.9.10.037-1 -----
+Initial release for Cygwin.
+Thanks to fuddy at freeshells.ch for the concept of 
+patching in trio to fix the build.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
