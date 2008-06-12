@@ -1,0 +1,12 @@
+DESCRIPTION="Enlightenment binary file library"
+HOMEPAGE="http://www.enlightenment.org/Libraries/Eet/"
+SRC_URI="http://download.enlightenment.org/snapshots/2008-05-19/${P}.tar.bz2"
+
+abi=1
+PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]="usr/bin/*.exe usr/share/doc/"
+PKG_CONTENTS[1]="usr/bin/cyg${PN}-${abi}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--includedir=/usr/include/enlightenment"

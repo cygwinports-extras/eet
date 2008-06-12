@@ -1,6 +1,7 @@
 category: Libs
-requires: cygwin libeet1
-sdesc: "Enlightenment binary file library (utility)"
+requires: cygwin libeet1 libjpeg-devel zlib
+external-source: eet
+sdesc: "Enlightenment binary file library (development)"
 ldesc: "Eet is a tiny library designed to write an arbitary set of 
 chunks of data to a file and optionally compress each chunk (very much 
 like a zip file) and allow fast random-access reading of the file later 
