@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libeet1 libjpeg-devel zlib
+requires: libeet1 libjpeg-devel zlib
 external-source: eet
 sdesc: "Enlightenment binary file library (development)"
 ldesc: "Eet is a tiny library designed to write an arbitary set of 
