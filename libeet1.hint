@@ -1,5 +1,5 @@
 category: Libs
-requires: libjpeg62 zlib
+requires: libeina05 libgcc1 libgcrypt11 libgnutls26 libjpeg7 zlib0
 external-source: eet
 sdesc: "Enlightenment binary file library (runtime)"
 ldesc: "Eet is a tiny library designed to write an arbitary set of 

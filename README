@@ -13,20 +13,25 @@ data is encoded in a platform independant way and can be written and
 read by any architecture.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libjpeg62-6b-12
-  zlib-1.2.3-2
+  cygwin-1.7.1-1
+  libeina05-0.9.9.063-1
+  libgcc1-4.3.4-3
+  libgcrypt11-1.4.1-4
+  libgnutls26-2.8.3-1
+  libjpeg7-7-10
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
-  binutils-20080624-2
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-15
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -38,55 +43,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack eet-1.1.0-X-src.tar.bz2
+  unpack eet-1.2.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./eet-1.1.0-X.cygport all
+  cygport ./eet-1.2.3-X.cygport all
 
 This will create:
-  /usr/src/eet-1.1.0-X-src.tar.bz2
-  /usr/src/eet-1.1.0-X.tar.bz2
-  /usr/src/libeet-devel-1.1.0-X.tar.bz2
-  /usr/src/libeet1-1.1.0-X.tar.bz2
+  /usr/src/eet-1.2.3-X-src.tar.bz2
+  /usr/src/eet-1.2.3-X.tar.bz2
+  /usr/src/libeet-devel-1.2.3-X.tar.bz2
+  /usr/src/libeet1-1.2.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(eet)
-  /usr/bin/eet.exe
-  /usr/share/doc/eet-1.1.0/AUTHORS
-  /usr/share/doc/eet-1.1.0/ChangeLog
-  /usr/share/doc/eet-1.1.0/COPYING
-  /usr/share/doc/eet-1.1.0/INSTALL
-  /usr/share/doc/eet-1.1.0/NEWS
-  /usr/share/doc/eet-1.1.0/README
-
-(libeet1)
-  /usr/bin/cygeet-1.dll
-
-(libeet-devel)
-  /usr/include/enlightenment/Eet.h
-  /usr/lib/libeet.a
-  /usr/lib/libeet.dll.a
-  /usr/lib/libeet.la
-  /usr/lib/pkgconfig/eet.pc
-
-------------------
-
 Port Notes:
 
------ version 1.1.0-1 -----
-Version bump.
-
------ version 1.0.1-1 -----
-Version bump.
-
------ version 0.9.10.037-1 -----
-Initial release for Cygwin.
-Thanks to fuddy at freeshells.ch for the concept of 
-patching in trio to fix the build.
+----- version 1.2.3-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
