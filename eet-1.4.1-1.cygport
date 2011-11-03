@@ -6,5 +6,3 @@ PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
 eet_CONTENTS="usr/bin/*.exe usr/share/doc/"
 libeet1_CONTENTS="usr/bin/cygeet-1.dll"
 libeet_devel_CONTENTS="usr/include/ usr/lib/"
-
-CYGCONF_ARGS="--includedir=/usr/include/enlightenment --enable-tests"

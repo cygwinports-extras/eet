@@ -1,5 +1,5 @@
 category: Libs
-requires: libeina05 libeet1 libgcc1
+requires: libeina1 libeet1
 sdesc: "Enlightenment binary file library (utility)"
 ldesc: "Eet is a tiny library designed to write an arbitary set of 
 chunks of data to a file and optionally compress each chunk (very much 
