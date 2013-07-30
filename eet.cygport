@@ -1,7 +1,7 @@
 NAME="eet"
-VERSION=1.7.4
+VERSION=1.7.7
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="Enlightenment binary file library"
 DESCRIPTION="Eet is a tiny library designed to write an arbitary set of
 chunks of data to a file and optionally compress each chunk (very much
@@ -12,9 +12,9 @@ other machines, or just writing to arbitary files on the system. All
 data is encoded in a platform independant way and can be written and
 read by any architecture."
 HOMEPAGE="http://www.enlightenment.org/Libraries/Eet/"
-SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+SRC_URI="http://download.enlightenment.org/releases/eet-${VERSION}.tar.bz2"
 
-PKG_NAMES="lib${PN}1 lib${PN}-devel"
+PKG_NAMES="libeet1 libeet-devel"
 libeet1_CONTENTS="usr/bin/cygeet-1.dll usr/share/doc/"
 libeet_devel_CONTENTS="usr/bin/eet.exe usr/include/ usr/lib/ usr/share/eet/"
 
